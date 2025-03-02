@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburgerBtn.addEventListener("click", function (e) {
         const isExpanded = hamburgerBtn.getAttribute("aria-expanded") === "true";
 
-        // Toggle the show-menu class
+        // menu handling 
         menu.classList.toggle("show-menu");
 
-        // Update the aria-expanded attribute
+
         hamburgerBtn.setAttribute("aria-expanded", !isExpanded);
 
     });
@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    //test right now seem to have a problem here, but functionality seems ok. need to run more test, maybe from my close menu function too 
     document.addEventListener("keydown", function (e) {
         if (e.key === "Escape" && menu.classList.contains("show-menu")) {
             closeMenu();
