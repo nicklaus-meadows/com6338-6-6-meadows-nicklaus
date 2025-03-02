@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // menu handling 
         menu.classList.toggle("show-menu");
 
-
+        //not 100% on this portion, but it seems to be the only option the code likes more that i have currently hfound
         hamburgerBtn.setAttribute("aria-expanded", !isExpanded);
 
     });
