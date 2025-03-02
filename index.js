@@ -10,10 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburgerBtn.addEventListener("click", function (e) {
         const isExpanded = hamburgerBtn.getAttribute("aria-expanded") === "true";
 
-        // Toggle the show-menu class
         menu.classList.toggle("show-menu");
 
-        // Update the aria-expanded attribute
         hamburgerBtn.setAttribute("aria-expanded", !isExpanded);
 
     });
